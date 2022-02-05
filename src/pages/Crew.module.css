@@ -1,0 +1,25 @@
+.page {
+	width: 100vw;
+	min-height: 100vh;
+	background-image: url("../images/assets/crew/background-crew-mobile.jpg");
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: cover;
+	border: transparent dashed 1px;
+}
+/* For tablets: */
+@media only screen and (min-width: 600px) {
+	.page {
+		background-image: url("../images/assets/crew/background-crew-tablet.jpg");
+		background-size: cover;
+	}
+}
+/* For desktop: */
+@media only screen and (min-width: 992px) {
+	.page {
+		width: 100vw;
+		min-height: 100vh;
+		background-image: url("../images/assets/crew/background-crew-desktop.jpg");
+		background-size: 100vw calc(0.625 * 100vw);
+	}
+}

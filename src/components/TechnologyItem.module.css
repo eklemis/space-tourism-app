@@ -1,0 +1,169 @@
+.content-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 15px;
+}
+.hor-wrapper {
+	display: flex;
+	flex-direction: row;
+	column-gap: 80px;
+}
+.navigation {
+	list-style: none;
+	display: flex;
+	column-gap: 16px;
+	width: auto;
+	margin-top: 34px;
+	margin-bottom: 26px;
+}
+.nav__item {
+	mix-blend-mode: normal;
+	opacity: 0.25;
+	border: 1px solid #ffffff;
+	box-sizing: border-box;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+
+	font-family: "Bellefair";
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 18px;
+
+	text-align: center;
+	letter-spacing: 2px;
+
+	color: white;
+}
+.nav__item.nav__item--active {
+	background-color: white;
+	color: #0b0d17;
+	opacity: 1;
+}
+.tech-tag {
+	font-family: "Barlow Condensed";
+	font-weight: 400;
+
+	font-size: 14px;
+	line-height: 17px;
+	/* identical to box height */
+
+	text-align: center;
+	letter-spacing: 2.3625px;
+
+	color: #d0d6f9;
+}
+.tech-name {
+	font-family: "Bellefair";
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 28px;
+	/* identical to box height */
+
+	text-align: center;
+
+	color: #ffffff;
+	margin-top: 9px;
+	text-transform: uppercase;
+}
+.tech-desc {
+	font-family: "Barlow";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 25px;
+	/* or 167% */
+
+	text-align: center;
+	color: #d0d6f9;
+	max-width: 327px;
+	margin-top: 16px;
+}
+.tech-photo {
+	margin-top: -42px;
+	width: 100vw;
+}
+/* For tablets: */
+@media only screen and (min-width: 600px) {
+	.tech-photo {
+		margin-top: 60px;
+	}
+	.navigation {
+		margin-bottom: 54px;
+	}
+	.nav__item {
+		width: 60px;
+		height: 60px;
+		font-size: 24px;
+		line-height: 28px;
+	}
+	.tech-tag {
+		font-size: 16px;
+		line-height: 19px;
+		letter-spacing: 2.7px;
+	}
+	.tech-name {
+		font-size: 40px;
+		line-height: 46px;
+	}
+	.tech-desc {
+		font-size: 16px;
+		line-height: 28px;
+		max-width: 458px;
+	}
+}
+/* For desktop: */
+@media only screen and (min-width: 992px) {
+	.content-wrapper {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 15px;
+	}
+	.navigation {
+		flex-direction: column;
+		row-gap: 32px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+	.nav__item {
+		width: 80px;
+		height: 80px;
+		font-size: 32px;
+		line-height: 37px;
+		/* identical to box height */
+	}
+	.tech-tag {
+		font-size: 16px;
+		line-height: 19px;
+		letter-spacing: 2.7px;
+
+		text-align: left;
+	}
+	.tech-name {
+		font-size: 56px;
+		line-height: 64px;
+		text-align: left;
+
+		margin-top: 17px;
+	}
+	.tech-desc {
+		text-align: left;
+		margin-top: 17px;
+		font-size: 18px;
+		line-height: 32px;
+		/* or 178% */
+		max-width: 444px;
+	}
+	.tech-photo {
+		margin-top: -110px;
+		max-width: 515px;
+		max-height: 527px;
+	}
+}

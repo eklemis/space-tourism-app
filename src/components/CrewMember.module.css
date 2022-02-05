@@ -1,0 +1,168 @@
+.content-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 32px;
+	width: 100%;
+}
+.navigation {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	column-gap: 24px;
+	width: auto;
+	margin-top: 32px;
+}
+.nav__item {
+	display: block;
+	width: 10px;
+	height: 10px;
+	background-color: #ffffff;
+	mix-blend-mode: normal;
+	opacity: 0.17;
+	border-radius: 50%;
+}
+.nav__item:hover {
+	opacity: 0.5;
+}
+.nav__item.nav__item--active {
+	background-color: white;
+	opacity: 1;
+}
+.crew-role {
+	font-family: "Bellefair";
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 18px;
+	text-align: center;
+
+	text-transform: uppercase;
+
+	color: #ffffff;
+
+	mix-blend-mode: normal;
+	opacity: 0.5;
+	margin-top: 32px;
+}
+.crew-name {
+	font-family: "Bellefair";
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 28px;
+	/* identical to box height */
+
+	text-align: center;
+	text-transform: uppercase;
+
+	color: #ffffff;
+	margin-top: 8px;
+}
+.crew-bio {
+	font-family: "Barlow";
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 25px;
+	/* or 167% */
+
+	text-align: center;
+
+	margin-top: 16px;
+	max-width: 327px;
+	/* or 178% */
+
+	color: #d0d6f9;
+}
+.photo-wrapper {
+	border-bottom: #383b4b solid 1px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.crew-photo {
+	max-width: 178px;
+	max-height: 222px;
+}
+/* For tablets: */
+@media only screen and (min-width: 600px) {
+	.crew-info {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.nav__item {
+		width: 10px;
+		height: 10px;
+	}
+	.crew-role {
+		font-size: 24px;
+		line-height: 28px;
+	}
+	.crew-name {
+		font-size: 40px;
+		line-height: 46px;
+	}
+	.photo-wrapper {
+		border-bottom: none;
+		margin-top: 40px;
+	}
+	.crew-bio {
+		font-size: 16px;
+		line-height: 28px;
+		max-width: 458px;
+	}
+	.crew-photo {
+		max-width: 457px;
+		max-height: 572px;
+	}
+}
+/* For desktop: */
+@media only screen and (min-width: 992px) {
+	.content-wrapper {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 15px;
+	}
+	.navigation {
+		margin-top: 100px;
+		column-gap: 16px;
+	}
+	.nav__item {
+		width: 15px;
+		height: 15px;
+	}
+	.crew-role {
+		margin-top: 0px;
+		font-size: 32px;
+		line-height: 37px;
+		text-align: left;
+	}
+	.crew-name {
+		min-width: 488px;
+		font-size: 56px;
+		line-height: 64px;
+		text-align: left;
+
+		margin-top: 15px;
+	}
+	.photo-wrapper {
+		border: none;
+		align-items: flex-end;
+	}
+	.crew-photo {
+		margin-top: -110px;
+		max-width: 500px;
+		max-height: 654px;
+	}
+	.crew-bio {
+		font-size: 18px;
+		line-height: 32px;
+		margin-top: 27px;
+		max-width: 444px;
+
+		text-align: left;
+	}
+}
